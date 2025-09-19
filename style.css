@@ -1,0 +1,405 @@
+:root {
+    --cor-de-fundo: #0d1e18;
+    --vermelho: #d5d4c7;
+    --branco: #ffffff;
+    --preto: #000000;
+  }
+  
+  .background {
+    background-color: var(--cor-de-fundo);
+  }
+  
+  .unifrakturcook-bold {
+    font-family: "UnifrakturCook", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .spectral-sc-extralight {
+    font-family: "Spectral SC", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .spectral-sc-light {
+    font-family: "Spectral SC", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .spectral-sc-regular {
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .spectral-sc-medium {
+    font-family: "Spectral SC", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .spectral-sc-semibold {
+    font-family: "Spectral SC", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .spectral-sc-bold {
+    font-family: "Spectral SC", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .spectral-sc-extrabold {
+    font-family: "Spectral SC", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .spectral-sc-extralight-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .spectral-sc-light-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .spectral-sc-regular-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .spectral-sc-medium-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .spectral-sc-semibold-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .spectral-sc-bold-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .spectral-sc-extrabold-italic {
+    font-family: "Spectral SC", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  
+  body {
+    font-family: 'Spectral SC', serif  !important;
+    background-color: var(--cor-de-fundo);
+  }
+  
+  .titulo,
+  .subtitulo {
+    font-family: 'UnifrakturCook', cursive  !important;
+  }
+  
+  
+  .cabecalho {
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    max-width: 1830px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .caixa {
+    position: relative;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+  
+  .img-cabecalho {
+    width: 10%;
+  }
+  
+  
+  .nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  
+  .nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  .nav a {
+    text-transform: uppercase;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: var(--preto);
+    text-decoration: underline;
+  }
+  
+  .lista-cabeçalho-item {
+    display: inline-block;
+    padding: 25px;
+    color: var(--branco);
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 35px;
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+  }
+  
+  .subtitulo {
+    text-align: center;
+    font-size: 25px;
+    color: var(--branco);
+  }
+  
+  .subtitulo2 {
+    text-align: left;
+    font-size: 20px;
+    color: var(--branco);
+    padding: 25px;
+  }
+  
+  .paragrafo-texto {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--branco);
+    padding: 5px;
+    hyphens: auto;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  
+  .iframe {
+    align-items: center;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .columnsContainer,
+  footer,
+  header {
+    position: relative;
+    margin: .9em;
+  }
+  
+  .leftColumn,
+  footer,
+  header {
+    border: 1px solid #ccc;
+    padding: 1em;
+  }
+  
+  .leftColumn {
+    margin-bottom: .5em;
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsividade básica */
+  @media screen and (max-width: 768px) {
+    .cabecalho {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+    .nav {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    /* Estilo para a lista */
+  ul, ol {
+    padding-left: 20px; /* Ajusta a indentação das listas */
+  }
+  
+  /* Estilo para cada item de lista */
+  li {
+    margin-bottom: 10px; /* Ajuste o valor para diminuir o espaço entre os itens da lista */
+  }
+  
+  /* Ajuste para os parágrafos dentro das listas */
+  li p {
+    margin: 0; /* Remove o margin do parágrafo dentro do item da lista */
+    line-height: 1.4; /* Ajuste para deixar o texto mais compacto ou espaçado conforme necessário */
+    margin-top: 0; /* Remove margem superior */
+    margin-bottom: 5px; /* Reduz o espaço inferior */
+  }
+  
+  /* Resetando o estilo da lista */
+  ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove os marcadores (se quiser) */
+  }
+  
+  .paragrafo-texto p {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+  }
+  
+  
+  
+    .lista-cabeçalho-item {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  /* Estilo geral do acordeão */
+  .acordeao .item {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo do botão (Título) */
+  .acordeao .titulo-creepy {
+    width: 100%;
+    background-color: #69816c;  /* Fundo escuro */
+    color: #fff;
+    border: none;
+    text-align: left;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border-bottom: 2px solid #ffffff;  /* Cor mais clara do fundo */
+    font-family: 'UnifrakturCook', cursive;  /* Fonte gótica */
+    letter-spacing: 1.5px;
+    position: relative;
+  }
+  
+  /* Efeito de hover no botão */
+  .acordeao .titulo-creepy:hover {
+    background-color: #b9bdb0;  /* Fundo um pouco mais claro ao passar o mouse */
+    color: #1b3d2e;  /* Cor vermelha para destaque */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  /* Ícone antes do título */
+  .acordeao .titulo-creepy::before {
+    content: "𖦹";
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efeito de hover no ícone */
+  .acordeao .titulo-creepy:hover::before {
+    transform: rotate(180deg);
+  }
+  
+  /* Estilo do conteúdo (o texto que aparece quando o título é clicado) */
+  .acordeao .conteudo-creepy {
+    background-color: #855247;  /* Fundo bem escuro */
+    color: #e6e6e6;
+    padding: 20px 30px;
+    display: none;  /* Inicialmente escondido */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-left: 4px solid #ffffff;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  .acordeao .conteudo-creepy.ativo {
+    display: block;
+  }
+  
+  /* Animação para o conteúdo aparecer */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .titulo, .subtitulo, .titulo-creepy {
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #d5d4c7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #855247;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b67c71;
+  }
+  
+  
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+  }
+  @media screen and (max-width: 768px) {
+    .titulo {
+      font-size: 30px;
+    }
+    .subtitulo {
+      font-size: 20px;
+    }
+  }
