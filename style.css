@@ -451,3 +451,13 @@ button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-secundaria);
 }
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
