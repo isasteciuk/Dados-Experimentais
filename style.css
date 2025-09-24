@@ -456,87 +456,80 @@ button:hover {
 
 
 
-/* Deixa imagens e vídeos responsivos */
+/* ---------- AJUSTE RESPONSIVO ---------- */
+
+/* Garante que tudo use o tamanho certo em qualquer tela */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Imagens e vídeos não ultrapassam a tela */
 img, video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Ajusta o layout para telas menores */
+/* Ajuste para telas menores (tablets e celulares) */
 @media screen and (max-width: 768px) {
-  .cabecalho {
-    flex-direction: column;
-    text-align: center;
+  body {
+    padding: 10px;
   }
 
-  .nav ul {
-    flex-direction: column;
-  }
-
-  .lista-cabecalho-item {
-    margin: 5px 0;
-  }
-}
-/* --- Ajustes básicos para responsividade --- */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Layout em telas menores (celular e tablet) */
-@media screen and (max-width: 768px) {
-
-  /* Cabeçalho empilhado */
+  /* Menu em coluna no celular */
   .cabecalho {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
   }
 
-  /* Navegação vertical */
   .nav {
     position: static;
-    margin-top: 15px;
-    text-align: center;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .nav ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 0;
     margin: 0;
   }
 
   .nav li {
+    margin: 8px 0;
     display: block;
-    margin: 5px 0;
   }
 
-  .lista-cabeçalho-item {
-    padding: 10px;
+  .nav a {
     font-size: 18px;
+    padding: 10px;
+    display: block;
   }
 
-  /* Títulos mais flexíveis */
+  /* Texto se ajustando */
   .titulo {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     padding: 10px;
   }
 
   .subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 
-  /* Ajuste para textos */
-  .paragrafo-texto {
-    font-size: 16px;
-    padding: 8px;
-    text-align: justify;
+  /* Evita que caixas e imagens fiquem estouradas */
+  .caixa-principal {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
   }
 }
+
