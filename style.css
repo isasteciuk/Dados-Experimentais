@@ -478,3 +478,65 @@ img, video {
     margin: 5px 0;
   }
 }
+/* --- Ajustes básicos para responsividade --- */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout em telas menores (celular e tablet) */
+@media screen and (max-width: 768px) {
+
+  /* Cabeçalho empilhado */
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* Navegação vertical */
+  .nav {
+    position: static;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .lista-cabeçalho-item {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* Títulos mais flexíveis */
+  .titulo {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Ajuste para textos */
+  .paragrafo-texto {
+    font-size: 16px;
+    padding: 8px;
+    text-align: justify;
+  }
+}
