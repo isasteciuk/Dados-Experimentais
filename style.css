@@ -451,13 +451,30 @@ button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-secundaria);
 }
+
+
+
+
+
+/* Deixa imagens e vídeos responsivos */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ajusta o layout para telas menores */
 @media screen and (max-width: 768px) {
   .cabecalho {
     flex-direction: column;
     text-align: center;
   }
-}
-img, video {
-  max-width: 100%;
-  height: auto;
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .lista-cabecalho-item {
+    margin: 5px 0;
+  }
 }
