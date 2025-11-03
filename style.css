@@ -428,10 +428,10 @@
 
   .caixa-principal{
     background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 700px;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
   }
 
   h1{
@@ -452,84 +452,14 @@ button:hover {
     color: var(--cor-secundaria);
 }
 
-
-
-
-
-/* ---------- AJUSTE RESPONSIVO ---------- */
-
-/* Garante que tudo use o tamanho certo em qualquer tela */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* Imagens e vídeos não ultrapassam a tela */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Ajuste para telas menores (tablets e celulares) */
 @media screen and (max-width: 768px) {
-  body {
-    padding: 10px;
+    .cabecalho {
+      flex-direction: column;
+      text-align: center;
+    }
   }
-
-  /* Menu em coluna no celular */
-  .cabecalho {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+  img, video {
+    max-width: 100%;
+    height: auto;
   }
-
-  .nav {
-    position: static;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav li {
-    margin: 8px 0;
-    display: block;
-  }
-
-  .nav a {
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-  }
-
-  /* Texto se ajustando */
-  .titulo {
-    font-size: 26px;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .subtitulo {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  /* Evita que caixas e imagens fiquem estouradas */
-  .caixa-principal {
-    width: 95%;
-    padding: 15px;
-    margin: auto;
-  }
-}
-
+    
