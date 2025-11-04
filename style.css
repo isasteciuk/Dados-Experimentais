@@ -213,16 +213,22 @@ button:hover {
     font-size: 18px;
   }
 
-  .divisor {
-    text-align: center;
-  }
-
   .introducao,
   .leftColumn,
   .graficos {
     padding: 20px;
     margin: 25px 0;
   }
+
+  .divisor {
+  text-align: center;      
+  margin: 20px 0;          
+  font-family: 'UnifrakturCook', cursive;
+  color: var(--cor-texto);
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-size: 22px;
+}
+
 
   body {
     padding: 10px 15px;
