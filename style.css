@@ -213,6 +213,10 @@ button:hover {
     font-size: 18px;
   }
 
+  .divisor {
+    text-align: center;
+  }
+
   .introducao,
   .leftColumn,
   .graficos {
