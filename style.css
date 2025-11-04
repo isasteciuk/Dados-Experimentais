@@ -9,23 +9,46 @@
   --preto: #000000;
 }
 
-/* 🌆 Fundo principal */
-.background {
-  background-color: var(--cor-de-fundo);
-}
-
-/* 🖋️ Fontes */
-body {
-  font-family: 'Spectral SC', serif !important;
-  background-color: var(--cor-de-fundo);
-  color: var(--cor-texto);
+/* 🧱 Estrutura base */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.titulo, .subtitulo {
+/* 🌆 Fundo principal */
+body {
+  font-family: 'Spectral SC', serif !important;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  padding: 20px 40px; /* espaçamento lateral */
+}
+
+.background {
+  background-color: var(--cor-de-fundo);
+  padding: 40px; /* espaço interno para o conteúdo */
+}
+
+/* 🖋️ Títulos */
+.titulo,
+.subtitulo {
   font-family: 'UnifrakturCook', cursive !important;
   text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  color: var(--branco);
+  margin: 30px 0;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 25px;
+  color: var(--branco);
+  margin-bottom: 20px;
 }
 
 /* 🔺 Cabeçalho */
@@ -39,6 +62,7 @@ body {
   max-width: 1830px;
   margin: 0 auto;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .caixa {
@@ -50,6 +74,7 @@ body {
 
 .img-cabecalho {
   width: 150px;
+  border-radius: 8px;
 }
 
 /* 🔗 Navegação */
@@ -81,17 +106,140 @@ body {
 }
 
 /* 📜 Textos principais */
-.titulo {
-  text-align: center;
-  font-size: 35px;
+.paragrafo-texto {
+  font-size: 16px;
   color: var(--branco);
-  margin-top: 40px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-.subtitulo {
-  text-align: center;
-  font-size: 25px;
-  color: var(--branco);
+/* 📦 Estrutura de seções */
+main {
+  max-width: 1100px;
+  margin: 0 auto; /* centraliza o conteúdo */
 }
 
-.paragrafo-texto
+.introducao,
+.leftColumn,
+.graficos {
+  margin: 40px auto;
+  padding: 25px 35px;
+  border-radius: 10px;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.03); /* leve contraste */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 📊 Caixa de gráficos */
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 60px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.caixa-principal h1 {
+  color: var(--cor-destaque);
+}
+
+/* 🔘 Botões */
+button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsividade */
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 15px 25px;
+  }
+
+  .background {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .caixa-principal {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .introducao,
+  .leftColumn,
+  .graficos {
+    padding: 20px;
+    margin: 25px 0;
+  }
+
+  body {
+    padding: 10px 15px;
+  }
+}
+
+/* 🌈 Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d4c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #855247;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b67c71;
+}
