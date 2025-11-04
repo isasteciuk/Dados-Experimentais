@@ -129,6 +129,15 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+  .divisor {
+  text-align: center;      
+  margin: 20px 0;          
+  font-family: 'UnifrakturCook', cursive;
+  color: var(--cor-texto);
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-size: 22px;
+}
+
 
 .caixa-principal {
   background-color: var(--cor-principal);
@@ -219,15 +228,6 @@ button:hover {
     padding: 20px;
     margin: 25px 0;
   }
-
-  .divisor {
-  text-align: center;      
-  margin: 20px 0;          
-  font-family: 'UnifrakturCook', cursive;
-  color: var(--cor-texto);
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  font-size: 22px;
-}
 
 
   body {
