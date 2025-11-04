@@ -263,6 +263,7 @@ button:hover {
 .graficos h1,
 .graficos h2,
 .graficos h3 {
+  justify-content: center; 
    text-align: center;
   color: var(--branco);
   margin: 5px 0;
