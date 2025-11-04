@@ -1,465 +1,290 @@
+
 :root {
-    --cor-de-fundo: #0d1e18;
-    --vermelho: #d5d4c7;
-    --branco: #ffffff;
-    --preto: #000000;
-  }
-  
-  .background {
-    background-color: var(--cor-de-fundo);
-  }
-  
-  .unifrakturcook-bold {
-    font-family: "UnifrakturCook", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .spectral-sc-extralight {
-    font-family: "Spectral SC", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .spectral-sc-light {
-    font-family: "Spectral SC", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .spectral-sc-regular {
-    font-family: "Spectral SC", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .spectral-sc-medium {
-    font-family: "Spectral SC", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .spectral-sc-semibold {
-    font-family: "Spectral SC", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .spectral-sc-bold {
-    font-family: "Spectral SC", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .spectral-sc-extrabold {
-    font-family: "Spectral SC", serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .spectral-sc-extralight-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .spectral-sc-light-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .spectral-sc-regular-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .spectral-sc-medium-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .spectral-sc-semibold-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .spectral-sc-bold-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .spectral-sc-extrabold-italic {
-    font-family: "Spectral SC", serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  
-  body {
-    font-family: 'Spectral SC', serif  !important;
-    background-color: var(--cor-de-fundo);
-  }
-  
-  .titulo,
-  .subtitulo {
-    font-family: 'UnifrakturCook', cursive  !important;
-  }
-  
-  
-  .cabecalho {
-    background-color: var(--vermelho);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    max-width: 1830px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  .caixa {
-    position: relative;
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-  }
-  
-  .img-cabecalho {
-    width: 10%;
-  }
-  
-  
-  .nav {
-    position: absolute;
-    top: 20px;
-    right: 0;
-  }
-  
-  .nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-  }
-  
-  .nav a {
-    text-transform: uppercase;
-    color: var(--branco);
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  
-  .nav a:hover {
-    color: var(--preto);
-    text-decoration: underline;
-  }
-  
-  .lista-cabeçalho-item {
-    display: inline-block;
-    padding: 25px;
-    color: var(--branco);
-    font-size: 25px;
-    font-weight: bolder;
-  }
-  
-  .a {
-    color: currentColor;
-    text-decoration: none;
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: 35px;
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-  }
-  
-  .subtitulo {
-    text-align: center;
-    font-size: 25px;
-    color: var(--branco);
-  }
-  
-  .subtitulo2 {
-    text-align: left;
-    font-size: 20px;
-    color: var(--branco);
-    padding: 25px;
-  }
-  
-  .paragrafo-texto {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: var(--branco);
-    padding: 5px;
-    hyphens: auto;
-    line-height: 1.5;
-    margin-bottom: 4px;
-  }
-  
-  .iframe {
-    align-items: center;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  
-  .columnsContainer,
-  footer,
-  header {
-    position: relative;
-    margin: .9em;
-  }
-  
-  .leftColumn,
-  footer,
-  header {
-    border: 1px solid #ccc;
-    padding: 1em;
-  }
-  
-  .leftColumn {
-    margin-bottom: .5em;
-  }
-  
-  .nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Responsividade básica */
-  @media screen and (max-width: 768px) {
-    .cabecalho {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-  
-    .nav {
-      position: static;
-      margin-top: 20px;
-      text-align: center;
-    }
-  
-    .nav li {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    /* Estilo para a lista */
-  ul, ol {
-    padding-left: 20px; /* Ajusta a indentação das listas */
-  }
-  
-  /* Estilo para cada item de lista */
-  li {
-    margin-bottom: 10px; /* Ajuste o valor para diminuir o espaço entre os itens da lista */
-  }
-  
-  /* Ajuste para os parágrafos dentro das listas */
-  li p {
-    margin: 0; /* Remove o margin do parágrafo dentro do item da lista */
-    line-height: 1.4; /* Ajuste para deixar o texto mais compacto ou espaçado conforme necessário */
-    margin-top: 0; /* Remove margem superior */
-    margin-bottom: 5px; /* Reduz o espaço inferior */
-  }
-  
-  /* Resetando o estilo da lista */
-  ul, ol {
-    padding: 0;
-    margin: 0;
-    list-style-type: none; /* Remove os marcadores (se quiser) */
-  }
-  
-  .paragrafo-texto p {
-    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
-  }
-  
-  
-  
-    .lista-cabeçalho-item {
-      display: block;
-      text-align: center;
-    }
-  }
-  
-  /* Estilo geral do acordeão */
-  .acordeao .item {
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo do botão (Título) */
-  .acordeao .titulo-creepy {
-    width: 100%;
-    background-color: #69816c;  /* Fundo escuro */
-    color: #fff;
-    border: none;
-    text-align: left;
-    padding: 20px 30px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-    border-bottom: 2px solid #ffffff;  /* Cor mais clara do fundo */
-    font-family: 'UnifrakturCook', cursive;  /* Fonte gótica */
-    letter-spacing: 1.5px;
-    position: relative;
-  }
-  
-  /* Efeito de hover no botão */
-  .acordeao .titulo-creepy:hover {
-    background-color: #b9bdb0;  /* Fundo um pouco mais claro ao passar o mouse */
-    color: #1b3d2e;  /* Cor vermelha para destaque */
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-  }
-  
-  /* Ícone antes do título */
-  .acordeao .titulo-creepy::before {
-    content: "𖦹";
-    position: absolute;
-    left: 10px;
-    color: #ffffff;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Efeito de hover no ícone */
-  .acordeao .titulo-creepy:hover::before {
-    transform: rotate(180deg);
-  }
-  
-  /* Estilo do conteúdo (o texto que aparece quando o título é clicado) */
-  .acordeao .conteudo-creepy {
-    background-color: #855247;  /* Fundo bem escuro */
-    color: #e6e6e6;
-    padding: 20px 30px;
-    display: none;  /* Inicialmente escondido */
-    font-size: 1.1rem;
-    line-height: 1.6;
-    border-left: 4px solid #ffffff;
-    animation: fadeIn 0.3s ease forwards;
-  }
-  .acordeao .conteudo-creepy.ativo {
-    display: block;
-  }
-  
-  /* Animação para o conteúdo aparecer */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .titulo, .subtitulo, .titulo-creepy {
-    text-shadow: 0 0 8px rgb(0, 0, 0);
-  }
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #d5d4c7;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #855247;
-    border-radius: 5px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b67c71;
-  }
-  
-  
-  @keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(2px, -2px); }
-    60% { transform: translate(-1px, 1px); }
-    80% { transform: translate(1px, -1px); }
-    100% { transform: translate(0); }
-  }
-  @media screen and (max-width: 768px) {
-    .titulo {
-      font-size: 30px;
-    }
-    .subtitulo {
-      font-size: 20px;
-    }
-  }
+  --cor-de-fundo: #0d1e18;
+  --cor-principal: #855247;
+  --cor-secundaria: #ffffff;
+  --cor-destaque: #1a271a;
+  --cor-texto: #ffffff;
+  --vermelho: #d5d4c7;
+  --preto: #000000;
+}
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
+body {
+  font-family: 'Spectral SC', serif !important;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  padding: 20px 40px; 
+}
 
-  :root {
-    --cor-fundo: #0d1e18;
-    --cor-principal: #855247 ;
-    --cor-secundaria: #ffffff;
-    --cor-destaque: #1a271a;
-    --cor-texto: #D7F9FF;
+.background {
+  background-color: var(--cor-de-fundo);
+  padding: 40px; 
+}
 
-  }
 
-  body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+.titulo,
+.subtitulo {
+  font-family: 'UnifrakturCook', cursive !important;
+  text-shadow: 0 0 8px rgb(0, 0, 0);
+}
 
-  .caixa-principal{
-    background-color: var(--cor-principal);
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
-    padding: 60px;
-  }
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  color: var(--branco);
+  margin: 30px 0;
+}
 
-  h1{
-    color: var(--cor-destaque);
-   }
+.subtitulo {
+  text-align: center;
+  font-size: 25px;
+  color: var(--branco);
+  margin-bottom: 20px;
+}
 
+
+.cabecalho {
+  background-color: var(--vermelho);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1830px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.caixa {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.img-cabecalho {
+  width: 150px;
+  border-radius: 8px;
+}
+
+
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav a {
+  text-transform: uppercase;
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--preto);
+  text-decoration: underline;
+}
+
+
+.paragrafo-texto {
+  font-size: 16px;
+  color: var(--branco);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+
+.introducao,
+.leftColumn,
+.graficos {
+  margin: 40px auto;
+  padding: 25px 35px;
+  border-radius: 10px;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.03); 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+   text-align: center;
+}
+
+.divisor {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'UnifrakturCook', cursive;
+  color: var(--cor-texto);
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  color: var(--cor-secundaria);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.caixa-principal h1 {
+  color: var(--cor-destaque);
+}
+
+.caixa-principal p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.caixa-principal button {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.caixa-principal button:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque);
+}
+
+.caixa-principal img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.graficos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: var(--cor-principal);
+  border-radius: 15px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.graficos h1,
+.graficos h2,
+.graficos h3 {
+  width: 100%;
+  text-align: center !important;
+  color: var(--cor-secundaria);
+  margin: 5px 0;
+  font-family: 'UnifrakturCook', cursive;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Botões globais */
 button {
-    background-color: var(--cor-principal);
-    color: var(--cor-destaque);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin: 10px;
 }
 
 button:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-secundaria);
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d4c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #855247;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b67c71;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  body { padding: 15px 25px; }
+  .background { padding: 20px; }
+  .titulo { font-size: 30px; }
+  .subtitulo { font-size: 22px; }
+  .caixa-principal { padding: 40px 20px; }
 }
 
 @media screen and (max-width: 768px) {
-    .cabecalho {
-      flex-direction: column;
-      text-align: center;
-    }
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  img, video {
-    max-width: 100%;
-    height: auto;
+
+  .nav {
+    position: static;
+    margin-top: 20px;
   }
-    
+
+  .nav li { display: block; margin: 10px 0; }
+
+  .titulo { font-size: 26px; }
+  .subtitulo { font-size: 18px; }
+
+  .introducao,
+  .leftColumn,
+  .graficos {
+    padding: 20px;
+    margin: 25px 10px;
+  }
+
+  body { padding: 10px 15px; }
+
+  .graficos { padding: 20px 10px; margin: 40px 10px; }
+  .caixa-principal { padding: 20px; max-width: 95%; }
+  .caixa-principal img { max-width: 220px; }
+}
