@@ -26,27 +26,49 @@
         </header>
 
         <main>
-            <h1 class="titulo">Parte 2</h1>
+            <h1 class="titulo">PARTE 2 — Cálculos da ANOVA (Análise de Variância)</h1>
 
             <section class="acordeao">
                 <div class="item">
-                    <button class="titulo-creepy">exemplo 1</button>
+                    <button class="titulo-creepy">Hipóteses</button>
                     <div class="conteudo-creepy">
                         <p class="paragrafo-texto">
-                        exemplo~
+                        Para Tratamentos: H₀: μ₁ = μ₂ = μ₃ = μ₄ = μ₅ ---- H₁: pelo menos uma média difere das demais
+                        </p>
+                        <p class="paragrafo-texto">
+                        Para Linhas: H₀: μL₁ = μL₂ = μL₃ = μL₄ = μL₅
+                        </p>
+                        <p class="paragrafo-texto">
+                        Para Colunas: H₀: μC₁ = μC₂ = μC₃ = μC₄ = μC₅ ---- α = 0,05
                         </p>
                         
                     </div>
                 </div>
 
                 <div class="item">
-                    <button class="titulo-creepy">exemplo 2</button>
+                    <button class="titulo-creepy">Cálculo dos Quadrados</button>
                     <div class="conteudo-creepy">
-                        <p class="paragrafo-texto">exemplo~ </p>
+                        <p class="paragrafo-texto">Fator de correção: FC= (117,8)² ÷ 25 ​= 555,0736</p>
+                        <p class="paragrafo-texto">Soma de Quadrados: SQl​= ∑ Li²​ ÷ K - FC = 9,1944</p>
+                        <p class="paragrafo-texto">SQc​ = ∑ Ci² ​÷ K - FC = 0,5264</p>
+                        <p class="paragrafo-texto">SQt​ = ∑ Ti² ​÷ K - FC = 41,6904</p>
+                        <p class="paragrafo-texto">SQtotal​ = ∑∑ Xij² - FC = 52,2464</p>
+                        <p class="paragrafo-texto">SQe = SQtotal - SQl - SQc - SQt = 0,8352</p>
+                        <p class="paragrafo-texto">Graus de Liberdade: GLl​ = GLc ​= GLt ​= 4,  GLe ​= 12,  GLtotal ​= 24</p>
 
                     </div>
-         
-    <!-- Link para o arquivo de script -->
+
+                <div class="item">
+                    <button class="titulo-creepy">Quadrados Médios</button>
+                    <div class="conteudo-creepy">
+                        <p class="paragrafo-texto">QMl = SQl ÷ GLl = 2,2986</p>
+                        <p class="paragrafo-texto">QMc = SQc ÷ GLc = 0,1316</p>
+                        <p class="paragrafo-texto">QMt = SQt ÷ GLt = 10,4226</p>
+                        <p class="paragrafo-texto">QMe = SQe ÷ GLe = 0,0696</p>
+
+                    </div>    
+
+
     <script src="script.js"></script>
 </body>
 
