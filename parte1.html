@@ -29,31 +29,92 @@
 
 
 <main>
-  <h1 class="titulo">Parte 1</h1>
+  <h1 class="titulo">PARTE 1 — Estrutura Experimental e Teste de Homogeneidade (Bartlett)</h1>
 
   <section class="acordeao">
       <div class="item">
-          <button class="titulo-creepy">exemplo 1</button>
+          <button class="titulo-creepy">Tabela de Dados</button>
           <div class="conteudo-creepy">
               <p class="paragrafo-texto">
-                exemplo~
+                Tabela 1 -  Massa seca total das mudas (g): </p>
+              <p class="paragrafo-texto">
+A média das linhas varia de 3,92 a 5,66 g, sugerindo certa diferença entre blocos (linhas). As médias das colunas variam de 4,5 a 4,9 g, indicando menor variação entre colunas. Os tratamentos aparecem equilibradamente (cada um 5 vezes, uma por linha e por coluna), garantindo a estrutura correta de um Delineamento em Quadrado Latino (5×5).
               </p>
           </div>
       </div>
 
-      <div class="item">
-          <button class="titulo-creepy">exemplo 2</button>
-          <div class="conteudo-creepy">
-              <p class="paragrafo-texto">
-              exemplo~
-              </p>
-          </div>
+   <div class="item">
+                    <button class="titulo-creepy">Teste de Homogeneidade das Variâncias – Bartlett</button>
+                    <div class="conteudo-creepy">
+                        <p class="paragrafo-texto">
+Hipóteses: 
+H₀: σ₁² = σ₂² = σ₃² = σ₄² = σ₅² (as variâncias são homogêneas);     H₁: pelo menos uma variância difere das demais;     Nível de significância: α = 0,05
+</p>
+
+<p class="paragrafo-texto">
+Cálculos principais:
+Variâncias individuais: s₁², s₂², s₃², s₄², s₅²
+</p>
+
+<p class="paragrafo-texto">
+Média das variâncias:
+
+𝑠ˉ 2 = 0,5278
+</p>
+
+<p class="paragrafo-texto">
+Logaritmo médio:
+
+log  𝑠ˉ 2 = − 0,277530614
+</p>
+
+<p class="paragrafo-texto">
+Fator de correção:
+
+𝐶 = 1,1
+</p>
+
+<p class="paragrafo-texto">
+Soma dos termos:
+
+∑
+𝐺
+𝐿
+𝑖
+log
+⁡
+𝑠
+𝑖
+2 = − 7,148872409
+</p>
+
+<p class="paragrafo-texto">
+Estatística de Bartlett:
+
+𝜒
+𝑐
+𝑜
+𝑟
+𝑟
+2
+=
+3
+,
+3459
+</p>
+
+<p class="paragrafo-texto">
+Conclusão:
+Como χ²calc = 3,35 < χ²tabelado(0,05; 4) = 9,48, aceita-se H₀.
+As variâncias são homogêneas ⇒ pode-se realizar a ANOVA.</p>
+</p>
+
+                    </div>
       </div>
   </section>
 </main>
 </div>
 
-<!-- Link para o arquivo de script -->
 <script src="script.js"></script>
 </body>
 
